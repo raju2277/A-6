@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <div>
                 <div className="flex justify-around items-center p-4 bg-base-100 shadow-sm">
-  <div className="">
+  <div className="flex gap-2 items-center">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
@@ -20,10 +20,10 @@ const Navbar = () => {
             <li><a>FAQ</a></li>
       </ul>
     </div>
-    <a className="font-bold text-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</a>
+    <a className="font-bold text-xl  sm:text-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 font-semibold">
+    <ul className="menu menu-horizontal px-1 font">
       <li><a>Products</a></li>
       <li><a>Features</a></li>
       <li><a>Pricing</a></li>
@@ -37,10 +37,11 @@ const Navbar = () => {
                 <a href=""><FaCartShopping></FaCartShopping></a>
                 <p className='absolute -top-2 -right-2  bg-red-500 text-xs px-1 text-white rounded-full'>5</p>
             </div>
-            <a href="#">Login</a>
+            <a href="#" className='text-sm'>Login</a>
 
         </div>
-    <btn className="btn btn-primary rounded-full ">Get Started</btn>
+    <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full ">Get Started</button>
+    
   </div>
 </div>
         </div>
