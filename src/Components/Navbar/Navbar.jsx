@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaCartShopping } from 'react-icons/fa6';
 
-const Navbar = () => {
+const Navbar = ({cartCount}) => {
     return (
         <div>
                 <div className="flex justify-around items-center p-4 bg-base-100 shadow-sm">
@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className='flex gap-2 items-center '>
             <div className="relative">
                 <a href=""><FaCartShopping></FaCartShopping></a>
-                <p className='absolute -top-2 -right-2  bg-red-500 text-xs px-1 text-white rounded-full'>5</p>
+                <p className='absolute -top-2 -right-2  bg-red-500 text-xs px-1 text-white rounded-full'>{cartCount>0?cartCount:""}</p>
             </div>
             <a href="#" className='text-sm'>Login</a>
 
