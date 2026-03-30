@@ -2,12 +2,12 @@ import React from 'react';
 
 const Pricing = () => {
     return (
-        <div className='w-[85%] mx-auto mt-10'>
+        <div className='w-[80%] mx-auto mt-10'>
             <div>
                 <h1 className='text-3xl my-1 font-bold text-center'>Simple, Transparent Pricing</h1>
                 <p className='text-[#627382] text-sm text-center'>Choose the plan that fit your needs Upgrade or downgrade anytime</p>
             </div>
-            <div className='mt-6 mb-5 grid sm:grid-cols-3 gap-3'>
+            <div className='mt-6 mb-5 grid sm:grid-cols-3 gap-3  mx-auto'>
                 <div className="card w-66 bg-base-100 shadow-sm">
   <div className="card-body">
     <div className=" justify-between">
