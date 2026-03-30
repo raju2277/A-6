@@ -8,6 +8,10 @@ import Banner from './Components/Banner/Banner'
 import Details from './Components/Banner/Details'
 import Products from './Components/Tools/Products/Products'
 import { ToastContainer } from 'react-toastify';
+import Steps from './Components/Steps/Steps'
+import Pricing from './Components/Pricing/Pricing'
+import Workflow from './Components/Workflow/Workflow'
+import Footer from './Components/Footer/Footer'
 
 
 
@@ -29,6 +33,10 @@ function App() {
           <Products productTools={productTools} cartCount={cartCount} setCartCount={setCartCount}></Products>
       </Suspense>
       <ToastContainer />
+      <Steps></Steps>
+      <Pricing></Pricing>
+      <Workflow></Workflow>
+      <Footer></Footer>
     </>
   )
 }
