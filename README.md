@@ -1,4 +1,4 @@
-Name:Project Management
+Name:Product Management
 
 Description:
 This is a simple and user friendly web project where user can add products to cart and also manage the product from cart by using remove and checkout options.
