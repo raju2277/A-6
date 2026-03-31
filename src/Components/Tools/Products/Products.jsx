@@ -21,7 +21,7 @@ const Products = ({productTools,setCartCount,cartCount}) => {
     const handleCartProducts=(product)=>{
         const newProducts=selectedProducts.filter(item => item.id!==product.id);
         setSelectedProducts(newProducts);
-        setCartCount(cartCount-1);
+        setCartCount(prev=>prev-1);
         setPrice(price-product.price);
         toast.error(`${product.name} removed from cart.`)
     };
@@ -31,8 +31,8 @@ const Products = ({productTools,setCartCount,cartCount}) => {
                 <h2 className='text-center font-bold text-3xl'>Premium Digital Tools</h2>
                 <p className='text-center text-sm text-[#627382]' >Choose from our curated collection of premium digital products designed <br />to boost your productivity and creativity.</p>
                 <div className='flex justify-center gap-1'>
-                    <button onClick={()=>setSelected("products")} className={`btn rounded-full ${selected==="products"?"bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white":""}  text-[#000000]`}>Products</button>
-                    <button onClick={()=>setSelected("cart")} className={`btn rounded-full ${selected==="cart"?"bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":""}  text-[#000000]`}>Cart ({cartCount})</button>
+                    <button type='button' onClick={()=>setSelected("products")} className={`btn rounded-full ${selected==="products"?"bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white":""}  text-[#000000]`}>Products</button>
+                    <button type='button' onClick={()=>setSelected("cart")} className={`btn rounded-full ${selected==="cart"?"bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":""}  text-[#000000]`}>Cart ({cartCount})</button>
                     
                 </div>
             </div>

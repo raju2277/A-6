@@ -2,7 +2,7 @@ import React from 'react';
 
 const Pricing = () => {
     return (
-        <div className='w-[80%] mx-auto mt-10'>
+        <div className='w-3/4 mx-auto mt-10'>
             <div>
                 <h1 className='text-3xl my-1 font-bold text-center'>Simple, Transparent Pricing</h1>
                 <p className='text-[#627382] text-sm text-center'>Choose the plan that fit your needs Upgrade or downgrade anytime</p>
@@ -41,7 +41,7 @@ const Pricing = () => {
   </div>
                 </div>
                 {/* second card */}
-                <div className="card relative w-76 bg-linear-to-r from-[#4539a5] to-[#9514FA] text-white shadow-sm">
+                <div className="card relative w-66 bg-linear-to-r from-[#4539a5] to-[#9514FA] text-white shadow-sm">
                     <span className="badge badge-xs badge-warning absolute -top-3 left-1/3 px-2 py-2">Most Popular</span>
   <div className="card-body ">
     

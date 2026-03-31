@@ -19,14 +19,14 @@ const Cart = ({selectedProducts,handleCheckout,price,handleCartProducts}) => {
                     </div>
 
                     
-                    <button onClick={()=>handleCartProducts(cartProduct)} className="btn btn-soft btn-error">Remove</button>
+                    <button type='button' onClick={()=>handleCartProducts(cartProduct)} className="btn btn-soft btn-error">Remove</button>
                </div>
             })}
                 <div className='flex justify-between px-3 my-2'>
                     <h2 className='text-[#627382]'>Total</h2>
                     <p className='mr-3 font-bold'>${price.toFixed(2)}</p>
                 </div>
-                <button onClick={handleCheckout} className='w-full my-3 btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white'>Proceed To Checkout</button>
+                <button type='button' onClick={handleCheckout} className='w-full my-3 btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white'>Proceed To Checkout</button>
             </div>
         </div>
     );

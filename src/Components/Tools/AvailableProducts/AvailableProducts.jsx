@@ -6,7 +6,7 @@ const AvailableProducts = ({products,price,setPrice,setCartCount,selectedProduct
     
 
     const handleProducts=(product)=>{
-
+        
         const isAdded=selectedProducts.some(added=>added.id===product.id);
         if(!isAdded)  {
             setSelectedProducts([...selectedProducts,product]);
@@ -48,7 +48,7 @@ const AvailableProducts = ({products,price,setPrice,setCartCount,selectedProduct
       
     </ul>
     <div className="mt-6">
-      <button onClick={()=>handleProducts(product)} className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-full" disabled={isAdded}>{!isAdded? "Buy Now":"Added to cart"}</button>
+      <button type="button" onClick={()=>handleProducts(product)} className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-full" disabled={isAdded}>{!isAdded? "Buy Now":"Added to cart"}</button>
     </div>
   </div>
             </div>
