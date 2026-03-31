@@ -1,16 +1,23 @@
-# React + Vite
+Name:Project Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description:
+This is a simple and user friendly web project where user can add products to cart and also manage the product from cart by using remove and checkout options.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+⚙️ Technologies Used
+.React.js
+.Tailwind CSS, DaisyUI
+.JavaScript (ES6+)
+.React-Toastify (NPM Package)
+.JSON (for product data)
 
-## React Compiler
+✨ Features:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Add to cart:
+Clicking the "buy now" button will add the product to the cart and also show the total added products on the navbar cart icon.
 
-## Expanding the ESLint configuration
+Remove Product from cart:
+User can remove any product that are listed in the cart section by just clicking the remove button.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Checkout:
+By clicking the "checkout" button will clear all the listed products in the card section.
